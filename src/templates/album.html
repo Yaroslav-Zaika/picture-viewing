@@ -1,0 +1,12 @@
+<md-content class="layout layout-wrap layout-align-center album ng-cloak">
+  <md-card ng-repeat="picture in AlbumCtrl.pictures" class="md-card flex-30 flex-xs-90 flex-sm-45 flex-md-30">
+    <a ng-href="picture/{{picture.id}}">
+      <img ng-src="{{picture.thumbnailUrl}}">
+    </a>
+    <md-card-title>
+      <md-card-title-text class="layout-row layout-align-center-center">
+        {{picture.title}}
+      </md-card-title-text>
+    </md-card-title>
+  </md-card>
+</md-content>

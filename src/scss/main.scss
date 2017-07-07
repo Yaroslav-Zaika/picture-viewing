@@ -1,0 +1,79 @@
+html, body {
+  background-color: #e2e2e0;
+}
+
+.container {
+  
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  
+  header {
+    
+    .toolbar {
+      
+      background: #546e7a;
+      
+      .link {
+        width: 64px;
+      }
+      
+      .link:hover {
+        background: #455a64;
+      }
+    }
+  }
+  
+  main {
+    
+    margin: 15px 5px;
+    
+    .md-card {
+      background: #FFFAFA
+    }
+    
+    .home {
+      
+      .link-album {
+        color: black;
+      }
+    }
+    
+    .album {
+      margin-bottom: 70px;
+    }
+    
+    .home, .album {
+      
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+    .picture {
+      
+      margin-bottom: 64px;
+      
+      img {
+        width: 100%;
+        height: 360px;
+      }
+    }
+  }
+  
+  footer {
+    
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    max-width: 960px;
+    width: 100%;
+    background: #546e7a;
+    border-radius: 1px;
+    
+    .octicon-mark-github {
+      color: white;
+    }
+  }
+}

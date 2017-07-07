@@ -1,0 +1,17 @@
+<md-content class="layout layout-wrap layout-align-center home ng-cloak" scroll-directive="HomeCtrl.loadMore()">
+  <md-card ng-repeat="picture in HomeCtrl.pictures | limitTo : HomeCtrl.limit" class="md-card flex-30 flex-xs-90 flex-sm-45 flex-md-30">
+    <a ng-href="/picture/{{picture.id}}">
+      <img ng-src="{{picture.thumbnailUrl}}">
+    </a>
+    <md-card-title>
+      <md-card-title-text class="layout-row layout-align-center-center">
+        {{picture.title}}
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content class="layout-row layout-align-center-center">
+      <a ng-href="/album/{{picture.albumId}}" class="link-album" ng-show="true">
+        <i class="material-icons">photo_album</i>
+      </a>
+    </md-card-content>
+  </md-card>
+</md-content>

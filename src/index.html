@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  
+  <title>Test task</title>
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- inject:css -->
+  <!-- endinject -->
+  
+  <!-- inject:js -->
+  <!-- endinject -->
+</head>
+<body>
+  <div class="container">
+    <header class="layout-column layout-fill">
+      <div class="md-toolbar-tools toolbar">
+        <span class="flex"></span>
+        <a ng-href="https://www.google.com" class="md-toolbar-tools link layout-row layout-align-center-center" target="_blank" rel="noopener">
+          <i class="material-icons">search</i>
+        </a>
+        <a ng-href="/" class="md-toolbar-tools link layout-row layout-align-center-center">
+          <i class="material-icons">home</i>
+        </a>
+      </div>
+    </header>
+    <main class="content" ng-view></main>
+    <footer>
+      <div class="md-toolbar">
+        <div class="md-toolbar-tools layout-row layout-align-center-center">
+          <span>Yaroslav Zaika</span>
+          <a aria-label="github" class="md-button layout-row layout-align-center-center" ng-href="https://github.com/Yaroslav-Zaika/angular-browserify-seed" target="_blank">
+            <img ng-src="assets/img/GitHub-Mark-32px.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
